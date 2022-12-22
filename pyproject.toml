@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "join-gate-bot"
+version = "0.1.0"
+description = ""
+authors = ["dia ♡"]
+readme = "README.md"
+packages = [{include = "join_gate_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+novus = {git = "https://github.com/6days9weeks/Novus.git", rev = "siesta", extras = ["vbu", "speed"]}
+
+[tool.black]
+line-length = 99
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+combine_as_imports = true
+filter_files = true
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+isort = "^5.11.4"
+pycln = "^2.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

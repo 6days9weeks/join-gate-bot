@@ -1,5 +1,9 @@
-# Byte-compiled / optimized / DLL files
 __pycache__/
+.vscode/
+config/config.toml
+config/website.toml
+.database.sqlite
+# Byte-compiled / optimized / DLL files
 *.py[cod]
 *$py.class
 
